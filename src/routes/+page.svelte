@@ -130,7 +130,7 @@
 <!-- {/key} -->
 
 <style lang="scss">
-    @import "$lib/mocha";
+    @import "$lib/mocha.scss";
 
     p.question {
         font-size: 150%;
