@@ -53,7 +53,7 @@
         list = await fetch("/api/data").then((res) => res.json());
         [match_a, match_b] = await randomMatch();
         setInterval(async () => {
-            list = await fetch("/api/data").then((res) => res.json());
+            // list = await fetch("/api/data").then((res) => res.json());
             // [match_a, match_b] = await randomMatch();
         }, 1000);
     });
