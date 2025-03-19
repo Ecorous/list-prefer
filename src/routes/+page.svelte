@@ -4,6 +4,7 @@
     let list: {
         name: string;
         desc: string;
+        attr: string;
         cat: string;
         matches: number;
         wins: number;
@@ -18,6 +19,7 @@
             {
                 name: string;
                 desc: string;
+                attr: string;
                 cat: string;
                 matches: number;
                 wins: number;
@@ -25,6 +27,7 @@
             {
                 name: string;
                 desc: string;
+                attr: string;
                 cat: string;
                 matches: number;
                 wins: number;
@@ -42,8 +45,8 @@
         }, 1000);
         return [list[a], list[b]];
     }
-    let match_a = { name: "", desc: "", cat: "", matches: 0, wins: 0 };
-    let match_b = { name: "", desc: "", cat: "", matches: 0, wins: 0 };
+    let match_a = { name: "", desc: "", attr: "", cat: "", matches: 0, wins: 0 };
+    let match_b = { name: "", desc: "", attr: "", cat: "", matches: 0, wins: 0 };
     
 
     onMount(async () => {
@@ -120,12 +123,14 @@
     <h1>{match_a.name}</h1>
     <i>{match_a.cat}</i>
     <p>{match_a.desc}</p>
+    <i>{match_a.attr}</i>
 </button>
 
 <button class={change} onclick={() => choose(match_b.name)}>
     <h1>{match_b.name}</h1>
     <i>{match_b.cat}</i>
     <p>{match_b.desc}</p>
+    <i>{match_b.attr}</i>
 </button>
 <!-- {/key} -->
 
